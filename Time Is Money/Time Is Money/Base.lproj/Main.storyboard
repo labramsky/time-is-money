@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Time_Is_Money" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="Gradient" translatesAutoresizingMaskIntoConstraints="NO" id="oSr-8N-pW6">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-15" translatesAutoresizingMaskIntoConstraints="NO" id="9rw-fF-Veo">
+                                <rect key="frame" x="85.5" y="100" width="204.5" height="138.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIME I$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Asl-78-yRo">
+                                        <rect key="frame" x="0.0" y="0.0" width="204.5" height="78"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="65"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MONEY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="914-D2-iiW">
+                                        <rect key="frame" x="0.0" y="63" width="204.5" height="75.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="63"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="Jar" translatesAutoresizingMaskIntoConstraints="NO" id="vZA-og-rNc">
+                                <rect key="frame" x="43" y="278" width="289" height="389"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="389" id="hMS-lu-HM6"/>
+                                    <constraint firstAttribute="width" constant="289" id="n6w-Sj-vaZ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vZA-og-rNc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2uM-4s-cir"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oSr-8N-pW6" secondAttribute="bottom" id="KQa-CW-RIx"/>
+                            <constraint firstItem="oSr-8N-pW6" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="KsV-tk-cES"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vZA-og-rNc" secondAttribute="bottom" id="RA7-ug-g2P"/>
+                            <constraint firstItem="9rw-fF-Veo" firstAttribute="centerX" secondItem="vZA-og-rNc" secondAttribute="centerX" id="UJx-Jt-9DX"/>
+                            <constraint firstItem="oSr-8N-pW6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bbI-Yp-dk2"/>
+                            <constraint firstItem="oSr-8N-pW6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cel-nW-pBy"/>
+                            <constraint firstItem="9rw-fF-Veo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="dEg-6H-d1k"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Gradient" width="375" height="667"/>
+        <image name="Jar" width="289" height="389"/>
+    </resources>
+</document>
